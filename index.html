@@ -11,17 +11,12 @@
 			Asterios Raptis on software development
 		</h3>
 		<div class="row">
-			<ul>
-				<li>
-					Independent fullstack developer
-				</li>
-				<li>
-					Adherent of open source software and distribution
-				</li>
-				<li>
-					Linux expertise in flavors of debian, Ubuntu and Lubuntu
-				</li>
-			</ul>
+				<ul id="skills-list">
+	<!-- ko foreach: skills -->
+		<li data-bind="text: value">			
+		</li>
+		 <!-- /ko -->
+	</ul>
 		</div>
 	</div>
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
