@@ -1,26 +1,101 @@
 ﻿<html>
   <head>
-    <title>index.html</title>
-	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
-	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-debug.js'></script>
-	<script type='text/javascript' src='app.js'  defer="defer"></script>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Asterios Raptis - Fullstack Developer</title>
+	  <!-- Link our CSS stylesheet -->
+	  <link rel="stylesheet" href="main.css">
   </head>
   <body>
-	<div class="container-fluid">
-		<h3>
-			Asterios Raptis on software development
-		</h3>
-		<div class="row">
-				<ul id="skills-list">
-	<!-- ko foreach: skills -->
-		<li data-bind="text: value">			
-		</li>
-		 <!-- /ko -->
-	</ul>
-		</div>
-	</div>
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <main>
+	  <header>
+		  <!-- Header content with avatar and basic info -->
+		  <img src="i/avatar.jpg" alt="Avatar" class="avatar">
+		  <div class="header-content">
+			  <h1>Hi 🖐<br />My name is Asterios Raptis</h1>
+			  <div class="subtitle">
+				  UX/UI <span class="dot">•</span>
+				  Fullstack Developer <span class="dot">•</span>
+				  All Things JavaScript <span class="dot">•</span>
+				  Husband & Dad <span class="dot">•</span>
+				  Ludwigsburg, Germany<span role="img" aria-label="Greece"></span>
+			  </div>
+			  <div class="contacts">
+				  <a href="https://github.com/astrapi69" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <img src="i/logo_github.svg" alt="GitHub" />
+            </span>
+					  <span>GitHub</span>
+				  </a>
+				  <a href="https://profile.codersrank.io/user/astrapi69" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <img src="i/logo_cr.svg" alt="CodersRank" />
+            </span>
+					  <span>CodersRank</span>
+				  </a>
+				  <a href="https://twitter.com/asteriosraptis" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <img src="i/logo_twitter.svg" alt="Twitter" />
+            </span>
+					  <span>Twitter</span>
+				  </a>
+				  <a href="https://www.facebook.com/asterios.raptis" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <img src="i/logo_facebook.svg" alt="Facebook" />
+            </span>
+					  <span>Facebook</span>
+				  </a>
+			  </div>
+		  </div>
+		  </div>
+	  </header>
+	  <section>
+		  <h2>My Coding Activity & Stats</h2>
+		  <!-- Summary widget -->
+		  <codersrank-summary
+				  username="astrapi69"
+				  show-header="false"
+				  branding="false"
+		  ></codersrank-summary>
+		  <!-- Activity widget -->
+		  <h2>Activity</h2>
+		  <codersrank-activity
+				  username="astrapi69"
+				  legend="false" labels tooltip step="5"
+				  branding="false"></codersrank-activity>
+		  <!-- Skills chart widget -->
+		  <h2>Skills chart</h2>
+		  <codersrank-skills-chart
+				  username="astrapi69"
+				  labels
+				  legend
+				  tooltip
+				  skills="HTML, CSS, JavaScript, Java, Kotlin, Batchfile, JSON, Other"
+				  svg-width="1120"
+				  svg-height="400"
+				  show-other-skills="true"
+				  branding="false"
+		  ></codersrank-skills-chart>
+	  </section>
+
+	  <footer>
+		  <!-- Generic footer copy -->
+	  </footer>
+  </main>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js'></script>
+  <script type='text/javascript' src='app.js'  defer="defer"></script>
+
+	<script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
+
+	<script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
+
+	<script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
+
+	<script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
+
+	<script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
+
+	<script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
   </body>
 </html>

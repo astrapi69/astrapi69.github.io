@@ -1,3 +1,9 @@
-/.tern-project
-/.project
-/.settings/
+##################
+# intellij files #
+##################
+*.iws
+*.iml
+*.iws
+*.ipr
+!.idea/runConfigurations
+.idea/*.*
