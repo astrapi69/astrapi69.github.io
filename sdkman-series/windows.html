@@ -2,36 +2,211 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Installing SDKMAN on Windows for JVM Developers</title>
-    <meta name="description" content="Install SDKMAN on Windows using WSL, Git Bash or Scoop. Complete setup with fixes and tips for JVM developers.">
+    <title>Installing SDKMAN on Windows for JVM Developers | Asterios Raptis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Install SDKMAN on Windows using WSL, Git Bash or Scoop. Complete setup with fixes and tips for Java and JVM developers.">
     <link rel="canonical" href="https://astrapi69.github.io/sdkman-series/windows.html">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../main.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../i/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../i/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Installing SDKMAN on Windows for JVM Developers">
-    <meta property="og:description" content="WSL, Git Bash, Scoop — plus troubleshooting and recommendations.">
+    <meta property="og:description" content="WSL, Git Bash or Scoop. Setup steps, troubleshooting and recommendations for JVM developers.">
     <meta property="og:url" content="https://astrapi69.github.io/sdkman-series/windows.html">
     <meta property="og:image" content="https://astrapi69.github.io/i/android-icon-192x192.png">
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Installing SDKMAN on Windows for JVM Developers">
-    <meta name="twitter:description" content="WSL, Git Bash, Scoop — complete setup and fixes.">
-    <link rel="stylesheet" href="../main.css">
+    <meta name="twitter:description" content="WSL, Git Bash or Scoop. Setup steps, troubleshooting and recommendations for JVM developers.">
+    <meta name="twitter:image" content="https://astrapi69.github.io/i/android-icon-192x192.png">
+
+    <!-- JSON-LD: TechArticle -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "TechArticle",
             "headline": "Installing SDKMAN on Windows for JVM Developers",
-            "description": "Install SDKMAN on Windows using WSL, Git Bash or Scoop. Complete setup with fixes and tips for JVM developers.",
-            "author": { "@type": "Person", "name": "Asterios Raptis" },
+            "description": "Install SDKMAN on Windows using WSL, Git Bash or Scoop. Complete setup with fixes and tips for Java and JVM developers.",
+            "author": { "@type": "Person", "name": "Asterios Raptis", "url": "https://astrapi69.github.io" },
             "publisher": { "@type": "Organization", "name": "Developer Toolchain Essentials" },
             "mainEntityOfPage": "https://astrapi69.github.io/sdkman-series/windows.html",
-            "keywords": ["sdkman","java","windows","wsl","developer tools"],
+            "keywords": ["sdkman","java","windows","wsl","developer tools","scoop","git bash"],
             "datePublished": "2025-10-31",
             "dateModified": "2025-10-31"
         }
     </script>
 </head>
 <body>
-<main>
-    <!-- Hier den Medium-Text ohne Tabellen, wie wir ihn erstellt haben -->
+<main class="container">
+
+    <header class="page-header">
+        <nav class="breadcrumbs"><a href="/">Home</a> / <a href="/sdkman-series/">SDKMAN Series</a> / <span>Windows Guide</span></nav>
+        <h1>Installing SDKMAN on Windows for JVM Developers</h1>
+        <p class="muted">Part of the SDKMAN Series — From Setup to Strategy</p>
+        <p>
+            SDKMAN is a popular tool for managing multiple SDK versions such as Java, Kotlin, Groovy or Gradle.
+            On Windows it requires a Linux like environment or a Windows native alternative.
+            This guide explains three practical ways to get a reliable setup and how to fix common errors.
+        </p>
+    </header>
+
+    <article class="prose">
+        <h2>Why SDKMAN does not natively work on Windows</h2>
+        <p>
+            SDKMAN is written for POSIX shells. Windows CMD and PowerShell do not provide full POSIX behavior.
+            To use SDKMAN effectively you need one of the following:
+        </p>
+        <ol>
+            <li>A Linux subsystem (WSL)</li>
+            <li>A Unix like shell emulator (Git Bash or Cygwin)</li>
+            <li>A Windows native package manager as an alternative (Scoop)</li>
+        </ol>
+
+        <hr>
+
+        <h2>Option 1: WSL — Windows Subsystem for Linux</h2>
+        <p>The most compatible and reliable method is to run SDKMAN inside WSL with Ubuntu.</p>
+
+        <h3>Step 1: Enable WSL and install Ubuntu</h3>
+        <pre><code class="language-powershell">wsl --install -d Ubuntu</code></pre>
+
+        <h3>Step 2: Install dependencies</h3>
+        <pre><code class="language-bash">sudo apt update && sudo apt upgrade -y
+sudo apt install curl unzip zip -y</code></pre>
+
+        <h3>Step 3: Install SDKMAN</h3>
+        <pre><code class="language-bash">curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version</code></pre>
+
+        <p><strong>Pros</strong></p>
+        <ul>
+            <li>Full Linux compatibility</li>
+            <li>Works with all SDKMAN packages</li>
+            <li>Good performance for daily development</li>
+        </ul>
+        <p><strong>Cons</strong></p>
+        <ul>
+            <li>Initial setup and disk space required</li>
+        </ul>
+
+        <hr>
+
+        <h2>Option 2: Git Bash or Cygwin</h2>
+        <p>
+            This keeps you in a Windows desktop environment but provides a Bash shell. Some SDKMAN features may not work perfectly.
+        </p>
+
+        <h3>Install</h3>
+        <ul>
+            <li><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git Bash</a></li>
+            <li><a href="https://www.cygwin.com/" target="_blank" rel="noopener">Cygwin</a></li>
+        </ul>
+
+        <h3>Add unzip and curl if missing</h3>
+        <pre><code class="language-powershell">choco install unzip</code></pre>
+
+        <h3>Install SDKMAN in Bash</h3>
+        <pre><code class="language-bash">curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"</code></pre>
+
+        <p><strong>Pros</strong></p>
+        <ul>
+            <li>No WSL required</li>
+            <li>Simple if you already use Git Bash</li>
+        </ul>
+        <p><strong>Cons</strong></p>
+        <ul>
+            <li>Limited compatibility in edge cases</li>
+            <li>Some SDK installs may fail or need manual path fixes</li>
+        </ul>
+
+        <hr>
+
+        <h2>Option 3: Scoop — Windows native alternative</h2>
+        <p>
+            If you only need JDK management on Windows, Scoop is a clean native solution without Bash.
+        </p>
+
+        <h3>Install Scoop</h3>
+        <pre><code class="language-powershell">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex</code></pre>
+
+        <h3>Add the Java bucket and install a JDK (Temurin 17)</h3>
+        <pre><code class="language-powershell">scoop bucket add java
+scoop install temurin17-jdk
+java -version</code></pre>
+
+        <p><strong>Pros</strong></p>
+        <ul>
+            <li>Fully native on Windows</li>
+            <li>Fast and simple installs</li>
+            <li>No Linux dependencies</li>
+        </ul>
+        <p><strong>Cons</strong></p>
+        <ul>
+            <li>Not the real SDKMAN tool</li>
+            <li>No <code>sdk use</code> or <code>sdk default</code> commands</li>
+        </ul>
+
+        <hr>
+
+        <h2>Common errors and fixes</h2>
+
+        <p><strong>1. Please install unzip on your system</strong><br>
+            Cause: the <code>unzip</code> utility is missing.<br>
+            Fix: <code>sudo apt install unzip -y</code> on Ubuntu, or <code>choco install unzip</code> on Windows.</p>
+
+        <p><strong>2. Couldn't find manifest for 'temurin17'</strong><br>
+            Cause: the Scoop Java bucket is not added or outdated.<br>
+            Fix: <code>scoop bucket add java</code>, then retry.</p>
+
+        <p><strong>3. sdk command not found</strong><br>
+            Cause: the SDKMAN init script was not sourced.<br>
+            Fix: <code>source "$HOME/.sdkman/bin/sdkman-init.sh"</code> or restart the shell.</p>
+
+        <p><strong>4. Permission denied</strong><br>
+            Cause: missing execute permissions on SDKMAN files.<br>
+            Fix: <code>chmod +x ~/.sdkman/bin/*</code>.</p>
+
+        <hr>
+
+        <h2>Which method should you choose</h2>
+        <ul>
+            <li><strong>Professional JVM developers</strong>: use WSL with SDKMAN for the most reliable experience.</li>
+            <li><strong>Casual users or Git Bash fans</strong>: possible, but expect occasional limitations.</li>
+            <li><strong>Windows first developers who only need JDK management</strong>: choose Scoop for simplicity.</li>
+        </ul>
+
+        <p><strong>Recommendation</strong>: if you manage multiple SDKs and need reproducible builds, use WSL with SDKMAN. For lightweight JDK installs, Scoop is convenient.</p>
+    </article>
+
+    <!-- Series Navigation -->
+    <section class="container highlight" style="margin-top:2rem">
+        <h2>Series navigation</h2>
+        <ul class="quick-nav">
+            <li><a href="/sdkman-series/">Back to series overview</a></li>
+            <li><a href="https://asterios-raptis.medium.com/sdkman-series-from-setup-to-strategy-72c7a19ac948" target="_blank" rel="noopener">Open series hub on Medium</a></li>
+            <li><a href="https://medium.com/@asterios-raptis/how-to-install-and-use-sdkman" target="_blank" rel="noopener">Next: Part 1 — How to Install and Use SDKMAN</a></li>
+        </ul>
+    </section>
+
+    <footer class="page-footer">
+        <p>© <span id="year"></span> Asterios Raptis · <a href="/">Back to homepage</a></p>
+    </footer>
+
 </main>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

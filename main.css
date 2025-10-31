@@ -223,3 +223,134 @@ footer {
         --svg-width: 640px
     }
 }
+/* === Article & Series Styles === */
+
+.page-header, .prose, .cards-grid, .quick-nav, .highlight {
+    background: #111;
+    border-radius: 12px;
+    padding: 24px 32px;
+    box-sizing: border-box;
+}
+
+.page-header h1 {
+    font-size: 2.2em;
+    color: var(--theme-color);
+    margin-bottom: 0.25em;
+}
+
+.page-header p.muted {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.95em;
+}
+
+.breadcrumbs {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+.breadcrumbs a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+}
+.breadcrumbs a:hover {
+    color: var(--theme-color);
+}
+
+.prose h2 {
+    color: var(--theme-color);
+    margin-top: 2em;
+    font-size: 1.6em;
+}
+.prose h3 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 1.2em;
+}
+.prose p, .prose li {
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+}
+.prose ul, .prose ol {
+    padding-left: 1.2em;
+}
+.prose strong {
+    color: var(--theme-color);
+}
+
+/* === Buttons & Links === */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--theme-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+.btn:hover {
+    background: rgba(var(--theme-color-rgb), 0.85);
+}
+
+/* === Cards grid === */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+.card {
+    background: #161616;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card h3 {
+    color: var(--theme-color);
+}
+.card p {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.95em;
+}
+
+/* === Highlight sections === */
+.highlight {
+    background: rgba(var(--theme-color-rgb), 0.1);
+    border: 1px solid rgba(var(--theme-color-rgb), 0.3);
+}
+
+/* === Code blocks === */
+pre {
+    background: #161616;
+    border-radius: 8px;
+    padding: 12px 16px;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+code {
+    color: #ff9966;
+    font-family: "Fira Code", monospace;
+    font-size: 0.95em;
+}
+
+/* === Quick navigation === */
+.quick-nav {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+.quick-nav li {
+    margin: 0.5em 0;
+}
+.quick-nav a {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+.quick-nav a:hover {
+    text-decoration: underline;
+}
+
+/* === Responsive layout for articles === */
+@media (max-width: 768px) {
+    .page-header, .prose, .cards-grid, .highlight {
+        padding: 16px 20px;
+    }
+}
