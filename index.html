@@ -6,10 +6,10 @@
     <title>Asterios Raptis — Author, Data Scientist, AI Consultant</title>
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="main.css"></noscript>
 
     <!-- Favicons (existing paths in /i/) -->
-    <link rel="stylesheet" href="main.css">
     <link rel="apple-touch-icon" sizes="57x57" href="i/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="i/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="i/apple-icon-72x72.png">
@@ -99,7 +99,11 @@
 
     <!-- Header / Hero -->
     <header class="container hero">
-        <img src="i/avatar.jpg" alt="Portrait of Asterios Raptis" class="avatar">
+        <img class="avatar"
+             src="i/avatar.webp"
+             srcset="i/avatar.webp 1x, i/avatar@2x.webp 2x"
+             width="160" height="160"
+             alt="Portrait von Asterios Raptis" fetchpriority="high">
         <div class="header-content">
             <h1>Hello, I am Asterios Raptis</h1>
             <p class="subtitle">Author • Data Scientist • AI Consultant • Software Architect</p>
@@ -118,16 +122,16 @@
             </nav>
             <div class="socials">
                 <a href="https://github.com/astrapi69" target="_blank" rel="noopener">
-                    <img src="i/logo_github.svg" alt="GitHub"> GitHub
+                    <img src="i/logo_github.svg" alt="" aria-hidden="true"> GitHub
                 </a>
                 <a href="https://medium.com/@asterios-raptis" target="_blank" rel="noopener">
-                    <img src="i/logo_cr.svg" alt="Medium"> Medium
+                    <img src="i/logo_cr.svg" alt="" aria-hidden="true"> Medium
                 </a>
                 <a href="https://www.linkedin.com/in/asterios-raptis-46824a31/" target="_blank" rel="noopener">
-                    <img src="i/logo_facebook.svg" alt="LinkedIn"> LinkedIn
+                    <img src="i/logo_facebook.svg" alt="" aria-hidden="true"> LinkedIn
                 </a>
                 <a href="https://twitter.com/asteriosraptis" target="_blank" rel="noopener">
-                    <img src="i/logo_twitter.svg" alt="X"> X
+                    <img src="i/logo_twitter.svg" alt="" aria-hidden="true"> X
                 </a>
             </div>
         </div>

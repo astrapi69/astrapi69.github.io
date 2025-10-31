@@ -354,3 +354,15 @@ code {
         padding: 16px 20px;
     }
 }
+
+/* main.css */
+.btn {
+    background:#0b57d0; /* hoher Kontrast */
+    color:#fff;
+    padding:.6rem .9rem;
+    border-radius:.5rem;
+    text-decoration:none;
+    font-weight:600;
+}
+.btn:hover { filter:brightness(0.95); }
+a { color:#0b57d0; }  /* statt blassgrau */
