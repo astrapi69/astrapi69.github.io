@@ -366,3 +366,14 @@ code {
 }
 .btn:hover { filter:brightness(0.95); }
 a { color:#0b57d0; }  /* statt blassgrau */
+
+.avatar {
+    display:inline-block;
+    width:160px; height:160px; /* muss zu width/height im <img> passen */
+    border-radius:50%;
+    object-fit:cover;
+}
+@media (max-width:640px){ .avatar{ width:160px; height:160px; } }
+
+.btn { background:#0b57d0; color:#fff; font-weight:600; } /* WCAG-Kontrast */
+a { color:#0b57d0; } /* ebenfalls guter Kontrast */
