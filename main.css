@@ -377,3 +377,25 @@ a { color:#0b57d0; }  /* statt blassgrau */
 
 .btn { background:#0b57d0; color:#fff; font-weight:600; } /* WCAG-Kontrast */
 a { color:#0b57d0; } /* ebenfalls guter Kontrast */
+.meta {
+    font-size: .9rem;
+    opacity: .9;
+    margin-top: .4rem;
+}
+.meta a {
+    color: #0b57d0;
+    font-weight: 500;
+}
+
+footer .meta {
+    font-size: 0.85rem;
+    opacity: 0.75;
+}
+footer .meta a {
+    color: #0b57d0;
+    font-weight: 500;
+}
+footer .meta a:hover {
+    opacity: 1;
+}
+
