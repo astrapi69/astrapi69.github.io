@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SDKMAN! Series - From Setup to Strategy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A five part SDKMAN! series covering installation, automation, vendor workflows, and whether Python needs something similar. Includes a Windows companion.">
+    <link rel="canonical" href="https://astrapi69.github.io/sdkman-series/">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../main.css">
+
+    <!-- Favicons (reuse existing) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../i/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../i/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="SDKMAN! Series - From Setup to Strategy">
+    <meta property="og:description" content="Installation, automation, vendor publishing, and a critical look at Python. Plus a Windows companion with WSL, Git Bash, and Scoop.">
+    <meta property="og:url" content="https://astrapi69.github.io/sdkman-series/">
+    <meta property="og:image" content="https://astrapi69.github.io/i/android-icon-192x192.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SDKMAN! Series - From Setup to Strategy">
+    <meta name="twitter:description" content="Installation, automation, vendor publishing, and a critical look at Python. Plus a Windows companion.">
+    <meta name="twitter:image" content="https://astrapi69.github.io/i/android-icon-192x192.png">
+
+    <!-- JSON-LD: Series + ItemList -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "CreativeWorkSeries",
+                    "name": "SDKMAN! Series - From Setup to Strategy",
+                    "url": "https://astrapi69.github.io/sdkman-series/",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Asterios Raptis",
+                        "url": "https://astrapi69.github.io"
+                    },
+                    "about": [
+                        "SDKMAN", "Java", "JVM", "WSL", "Developer Tools", "Automation"
+                    ],
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Developer Toolchain Essentials"
+                    }
+                },
+                {
+                    "@type": "ItemList",
+                    "name": "SDKMAN! Series Contents",
+                    "itemListOrder": "http://schema.org/ItemListOrderAscending",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 0,
+                            "url": "https://astrapi69.github.io/sdkman-series/windows.html",
+                            "name": "Installing SDKMAN! on Windows - The Missing Guide for JVM Developers"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "url": "https://medium.com/@asterios-raptis/how-to-install-and-use-sdkman",
+                            "name": "How to Install and Use SDKMAN!"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "url": "https://medium.com/@asterios-raptis/mastering-sdkman-advanced-tips-and-tricks",
+                            "name": "Mastering SDKMAN! Advanced Tips and Tricks"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "url": "https://medium.com/@asterios-raptis/publishing-sdks-with-sdkman-a-guide-for-vendors",
+                            "name": "Publishing SDKs with SDKMAN! - A Guide for Vendors"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "url": "https://medium.com/@asterios-raptis/is-there-an-sdkman-for-python",
+                            "name": "Is There an SDKMAN! for Python?"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 5,
+                            "url": "https://medium.com/@asterios-raptis/do-we-need-an-sdkman-for-python",
+                            "name": "Do We Need an SDKMAN! for Python?"
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
+</head>
+<body>
+<main class="container">
+
+    <!-- Header -->
+    <header class="page-header">
+        <h1>SDKMAN! Series - From Setup to Strategy</h1>
+        <p>
+            SDKMAN! is the de facto standard for managing JVM SDKs, and its capabilities reach beyond Java.
+            This five part series explores installation, automation, vendor workflows, and a critical look at whether Python needs something similar.
+        </p>
+        <p class="muted">
+            Part of the Developer Toolchain Essentials series by Asterios Raptis.
+        </p>
+        <p class="note">
+            Not a Medium member? Tap to read the full story for free. If a link does not open in the app, use the 3 dot menu and select "Open in Browser".
+        </p>
+        <nav class="breadcrumbs">
+            <a href="/">Home</a> / <span>SDKMAN! Series</span>
+        </nav>
+    </header>
+
+    <!-- What you will learn -->
+    <section>
+        <h2>What you will learn</h2>
+        <ul class="bullets">
+            <li>Installation and core workflows - get productive in 10 minutes</li>
+            <li>Advanced automation - .sdkmanrc, hooks, custom mirrors</li>
+            <li>Vendor publishing - ship your SDK through the SDKMAN! infrastructure</li>
+            <li>Ecosystem analysis - why Python lacks an equivalent and whether it should have one</li>
+        </ul>
+        <p class="muted">
+            For backend engineers, DevOps practitioners, SDK maintainers, and anyone managing multiple runtime versions across projects.
+        </p>
+    </section>
+
+    <!-- Cards for each part -->
+    <section class="cards-grid">
+        <!-- Part 0 -->
+        <article class="card">
+            <h3><span aria-hidden="true">0️⃣</span> Installing SDKMAN! on Windows</h3>
+            <p>
+                Why SDKMAN! does not natively work on Windows and how to set it up with WSL, Git Bash, or Scoop.
+                Includes common errors and fixes, plus a recommendation by developer profile.
+            </p>
+            <p>
+                <a class="btn" href="/sdkman-series/windows.html">Read the Windows guide</a>
+            </p>
+        </article>
+
+        <!-- Part 1 -->
+        <article class="card">
+            <h3><span aria-hidden="true">1️⃣</span> How to Install and Use SDKMAN!</h3>
+            <p>
+                Quick start for Linux, macOS, and WSL. Essential commands: list, install, use, default. Shell integration and environment switching.
+            </p>
+            <p>
+                <a class="btn" href="https://medium.com/@asterios-raptis/how-to-install-and-use-sdkman">Read on Medium</a>
+            </p>
+        </article>
+
+        <!-- Part 2 -->
+        <article class="card">
+            <h3><span aria-hidden="true">2️⃣</span> Mastering SDKMAN! Advanced Tips and Tricks</h3>
+            <p>
+                Automate onboarding with .sdkmanrc, use custom mirrors for enterprise, and wire up environment hooks. Manage multi project SDK matrices.
+            </p>
+            <p>
+                <a class="btn" href="https://medium.com/@asterios-raptis/mastering-sdkman-advanced-tips-and-tricks">Read on Medium</a>
+            </p>
+        </article>
+
+        <!-- Part 3 -->
+        <article class="card">
+            <h3><span aria-hidden="true">3️⃣</span> Publishing SDKs with SDKMAN! - A Guide for Vendors</h3>
+            <p>
+                How the vendor submission process works, metadata and versioning, release automation, validation, and approval best practices.
+            </p>
+            <p>
+                <a class="btn" href="https://medium.com/@asterios-raptis/publishing-sdks-with-sdkman-a-guide-for-vendors">Read on Medium</a>
+            </p>
+        </article>
+
+        <!-- Part 4 -->
+        <article class="card">
+            <h3><span aria-hidden="true">4️⃣</span> Is There an SDKMAN! for Python?</h3>
+            <p>
+                pyenv, asdf, Poetry, PDM - strengths and gaps. Why the SDKMAN! architecture does not directly translate and where the user experience diverges.
+            </p>
+            <p>
+                <a class="btn" href="https://medium.com/@asterios-raptis/is-there-an-sdkman-for-python">Read on Medium</a>
+            </p>
+        </article>
+
+        <!-- Part 5 -->
+        <article class="card">
+            <h3><span aria-hidden="true">5️⃣</span> Do We Need an SDKMAN! for Python?</h3>
+            <p>
+                Would centralization help or hurt the Python ecosystem? A practical proposal for a Python native SDK manager and trade offs to consider.
+            </p>
+            <p>
+                <a class="btn" href="https://medium.com/@asterios-raptis/do-we-need-an-sdkman-for-python">Read on Medium</a>
+            </p>
+        </article>
+    </section>
+
+    <!-- Quick navigation -->
+    <section>
+        <h2>Quick navigation</h2>
+        <ul class="quick-nav">
+            <li><a href="/sdkman-series/windows.html">Installing SDKMAN! on Windows - Read</a></li>
+            <li><a href="https://medium.com/@asterios-raptis/how-to-install-and-use-sdkman">How to Install and Use SDKMAN! - Read</a></li>
+            <li><a href="https://medium.com/@asterios-raptis/mastering-sdkman-advanced-tips-and-tricks">Mastering SDKMAN! Advanced Tips and Tricks - Read</a></li>
+            <li><a href="https://medium.com/@asterios-raptis/publishing-sdks-with-sdkman-a-guide-for-vendors">Publishing SDKs with SDKMAN! - Read</a></li>
+            <li><a href="https://medium.com/@asterios-raptis/is-there-an-sdkman-for-python">Is There an SDKMAN! for Python? - Read</a></li>
+            <li><a href="https://medium.com/@asterios-raptis/do-we-need-an-sdkman-for-python">Do We Need an SDKMAN! for Python? - Read</a></li>
+        </ul>
+    </section>
+
+    <footer class="page-footer">
+        <p><a href="/">Back to homepage</a></p>
+    </footer>
+
+</main>
+</body>
+</html>
