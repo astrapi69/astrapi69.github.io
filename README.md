@@ -1,17 +1,48 @@
-# Hi there 👋
+## 👋 Welcome
 
-I'm an enthousiast software craftman
+I build systems, books and workflows at the intersection of **AI, automation and publishing**.
 
-Playing around with Java since 2000
+Background: Senior software engineer, IT- & AI-consultant, author of technical, political and creative works.
 
-# My Trophies
+Core strengths:
+- AI-assisted automation pipelines
+- System architecture & backend engineering (Java / Python)
+- Self-publishing workflows & creative tooling
+- Open-source tooling for writing & knowledge management
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=astrapi69)](https://github.com/ryo-ma/github-profile-trophy)
+---
 
-## You may also like
+### 🚀 Current Focus
 
-My other social network profiles :
+- Building AI-enhanced writing & publishing pipelines
+- Designing sovereign data & identity systems
+- Creating ethical, citizen-centric governance concepts (BFREI)
 
-[<img align="left" alt="linked-in" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/asterios-raptis-46824a31/)
-[<img align="left" alt="medium" src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" />](https://medium.com/@asterios-raptis)
-[<img align="left" alt="twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com/asteriosraptis)
+---
+
+### 📚 Selected Projects
+
+- **write-book-template** – Automated multi-format publishing pipeline (Markdown → EPUB/PDF/DOCX/HTML)
+- **linux-setup** – Automated system configuration & security hardening
+- **Guardian Chronicles** – Creative AI-supported storytelling series
+- **BFREI** – Citizen-Friendly Political Party and Reform Initiative (political innovation project)
+
+> Full project list in pinned repos.
+
+---
+
+### 🛠 Tech Stack
+
+**Languages:** Java, Python, Bash, Markdown  
+**Domains:** Automation, AI workflows, publishing systems, Linux  
+**Tools:** Poetry, Pandoc, GitHub Actions, Docker
+
+---
+
+### 🌍 Connect
+
+[LinkedIn](https://www.linkedin.com/in/asterios-raptis-46824a31/)  
+[Medium](https://medium.com/@asterios-raptis)  
+[Twitter](https://twitter.com/asteriosraptis)
+
+---
