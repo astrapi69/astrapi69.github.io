@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mystic Crypt UI — Tools by Asterios Raptis</title>
+
+    <!-- Core CSS -->
+    <link rel="preload" href="/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/main.css">
+    </noscript>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/i/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/i/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/i/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/i/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/i/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/i/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/i/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/i/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/i/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/i/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/i/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/i/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/i/favicon-16x16.png">
+    <link rel="manifest" href="/i/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/i/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Basic SEO -->
+    <meta name="description"
+          content="Mystic Crypt UI is a cross-platform Java desktop application for encryption, key management, password storage, and checksum verification.">
+    <link rel="canonical" href="https://astrapi69.github.io/tools/mystic-crypt.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mystic Crypt UI — Tools by Asterios Raptis">
+    <meta property="og:description"
+          content="Cross-platform Java application for encryption, key management, password storage, and checksum verification.">
+    <meta property="og:url" content="https://astrapi69.github.io/tools/mystic-crypt.html">
+    <meta property="og:image" content="https://astrapi69.github.io/i/android-icon-192x192.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mystic Crypt UI — Tools by Asterios Raptis">
+    <meta name="twitter:description"
+          content="Cross-platform Java application for encryption, key management, password storage, and checksum verification.">
+    <meta name="twitter:image" content="https://astrapi69.github.io/i/android-icon-192x192.png">
+
+    <!-- JSON-LD: SoftwareApplication -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Mystic Crypt UI",
+            "operatingSystem": "Windows, Linux, macOS",
+            "applicationCategory": "SecurityApplication",
+            "author": {
+                "@type": "Person",
+                "name": "Asterios Raptis",
+                "url": "https://astrapi69.github.io"
+            },
+            "downloadUrl": "https://github.com/astrapi69/mystic-crypt-ui/releases",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+            }
+        }
+    </script>
+</head>
+<body>
+<main>
+
+    <header class="page-header container">
+        <nav class="breadcrumbs">
+            <a href="/">Home</a> ›
+            <a href="/tools/">Tools</a> ›
+            <span>Mystic Crypt UI</span>
+        </nav>
+        <h1>Mystic Crypt UI</h1>
+        <p class="muted">
+            Mystic Crypt UI is a cross-platform Java desktop application for managing passwords,
+            cryptographic keys, encrypted notes, and checksum verification.
+        </p>
+    </header>
+
+    <section class="prose container">
+        <h2>Features</h2>
+        <ul>
+            <li>Organize passwords and secure notes in a structured tree layout</li>
+            <li>Generate private and public key pairs (1024 / 2048 / 4096 bit)</li>
+            <li>Verify downloads using checksum algorithms (e.g. MD5, SHA variants)</li>
+            <li>Obfuscate and de-obfuscate text using a customizable mapping</li>
+            <li>Runs on Windows, Linux, and macOS (Java required)</li>
+        </ul>
+
+        <h2>Download & installation</h2>
+        <p>
+            The latest version, installers, and release artifacts are available on GitHub:
+        </p>
+        <p>
+            <a class="btn" href="https://github.com/astrapi69/mystic-crypt-ui/releases"
+               target="_blank" rel="noopener">
+                Mystic Crypt UI — GitHub Releases
+            </a>
+        </p>
+
+        <h3>Build from source</h3>
+        <pre><code>git clone https://github.com/astrapi69/mystic-crypt-ui.git
+cd mystic-crypt-ui
+./gradlew build
+# The JAR will be located under:
+#   build/libs/mystic-crypt-ui-&lt;version&gt;.jar
+</code></pre>
+
+        <h3>Alternative installer</h3>
+        <p>
+            A platform-independent IzPack installer is also available:
+            <a href="https://sourceforge.net/projects/mystic-crypt/"
+               target="_blank" rel="noopener">
+                Mystic Crypt Installer on SourceForge
+            </a>
+        </p>
+
+        <h2>Requirements</h2>
+        <ul>
+            <li>Java Runtime Environment (JRE) 8 or newer</li>
+            <li>Ability to run desktop applications on your operating system</li>
+        </ul>
+
+        <h2>Project & source code</h2>
+        <p>
+            Mystic Crypt UI is open source. You can browse the code, report issues,
+            or contribute via GitHub:
+        </p>
+        <p>
+            <a href="https://github.com/astrapi69/mystic-crypt-ui"
+               target="_blank" rel="noopener">
+                github.com/astrapi69/mystic-crypt-ui
+            </a>
+        </p>
+
+        <p>
+            <a href="/tools/">← Back to tools overview</a>
+        </p>
+    </section>
+
+    <footer class="container">
+        <p>© <span id="year"></span> Asterios Raptis. All rights reserved.</p>
+        <p class="meta">
+            <a href="/sitemap.xml">Sitemap</a> ·
+            <a href="/sdkman-series/">SDKMAN Series</a>
+        </p>
+        <p class="meta">
+            Founder of
+            <a href="https://burgerfreundlichepartei.github.io/website/" target="_blank" rel="noopener">
+                BFREI — Citizen-Friendly Political Party and Reform Initiative
+            </a>
+        </p>
+    </footer>
+
+</main>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
