@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://astrapi69.github.io/</loc></url>
-    <url><loc>https://astrapi69.github.io/sdkman-series/</loc></url>
-    <url><loc>https://astrapi69.github.io/sdkman-series/windows.html</loc></url>
-    <url><loc>https://astrapi69.github.io/tools/</loc></url>
-    <url><loc>https://astrapi69.github.io/tools/mystic-crypt.html</loc></url>
+
+    <!-- Main site -->
+    <url>
+        <loc>https://astrapi69.github.io/</loc>
+    </url>
+
+    <!-- SDKMAN Series -->
+    <url>
+        <loc>https://astrapi69.github.io/sdkman-series/</loc>
+    </url>
+    <url>
+        <loc>https://astrapi69.github.io/sdkman-series/windows.html</loc>
+    </url>
+
+    <!-- Tools overview -->
+    <url>
+        <loc>https://astrapi69.github.io/tools/</loc>
+    </url>
+
+    <!-- Individual tool pages -->
+    <url>
+        <loc>https://astrapi69.github.io/tools/mystic-crypt.html</loc>
+    </url>
+    <url>
+        <loc>https://astrapi69.github.io/tools/mp3-tagger.html</loc>
+    </url>
+    <url>
+        <loc>https://astrapi69.github.io/tools/pdf-to-text.html</loc>
+    </url>
+    <url>
+        <loc>https://astrapi69.github.io/tools/bundle-app.html</loc>
+    </url>
+
 </urlset>
