@@ -19,7 +19,7 @@
         <loc>https://astrapi69.github.io/tools/</loc>
     </url>
 
-    <!-- Individual tools -->
+    <!-- Individual tool pages -->
     <url>
         <loc>https://astrapi69.github.io/tools/mystic-crypt.html</loc>
     </url>
@@ -28,6 +28,9 @@
     </url>
     <url>
         <loc>https://astrapi69.github.io/tools/pdf-to-text.html</loc>
+    </url>
+    <url>
+        <loc>https://astrapi69.github.io/tools/bundle-app.html</loc>
     </url>
 
 </urlset>
