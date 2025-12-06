@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MP3 Tagger UI — Tools by Asterios Raptis</title>
+
+    <!-- Core CSS -->
+    <link rel="preload" href="/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/main.css"></noscript>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/i/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/i/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/i/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/i/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/i/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/i/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/i/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/i/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/i/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/i/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/i/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/i/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/i/favicon-16x16.png">
+    <link rel="manifest" href="/i/manifest.json">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- SEO -->
+    <meta name="description"
+          content="MP3 Tagger UI is a cross-platform desktop application for editing MP3 metadata (ID3 tags), including cover images, titles, and album information.">
+    <link rel="canonical" href="https://astrapi69.github.io/tools/mp3-tagger.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MP3 Tagger UI — Tools by Asterios Raptis">
+    <meta property="og:description"
+          content="Cross-platform MP3 metadata editor supporting ID3 tags, cover images and batch updates.">
+    <meta property="og:url" content="https://astrapi69.github.io/tools/mp3-tagger.html">
+    <meta property="og:image" content="https://astrapi69.github.io/i/android-icon-192x192.png">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "MP3 Tagger UI",
+            "applicationCategory": "MultimediaApplication",
+            "operatingSystem": "Windows, Linux, macOS",
+            "author": {
+                "@type": "Person",
+                "name": "Asterios Raptis",
+                "url": "https://astrapi69.github.io"
+            },
+            "downloadUrl": "https://github.com/astrapi69/mp3-tagger-ui/releases",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+            }
+        }
+    </script>
+</head>
+<body>
+<main>
+
+    <header class="page-header container">
+        <nav class="breadcrumbs">
+            <a href="/">Home</a> ›
+            <a href="/tools/">Tools</a> ›
+            <span>MP3 Tagger UI</span>
+        </nav>
+        <h1>MP3 Tagger UI</h1>
+        <p class="muted">
+            A simple and efficient cross-platform desktop tool for editing MP3 metadata (ID3 tags),
+            including titles, artists, albums, track numbers, and cover artwork.
+        </p>
+    </header>
+
+    <section class="prose container">
+        <h2>Features</h2>
+        <ul>
+            <li>Edit ID3 tags: title, artist, album, genre, year, comments</li>
+            <li>Add or replace album cover images</li>
+            <li>Batch-edit multiple MP3 files at once</li>
+            <li>Automatic reading and writing of ID3v1 and ID3v2 tags</li>
+            <li>Cross-platform (Windows, Linux, macOS)</li>
+        </ul>
+
+        <h2>Download</h2>
+        <p>
+            Latest release:
+        </p>
+        <p>
+            <a class="btn" href="https://github.com/astrapi69/mp3-tagger-ui/releases"
+               target="_blank" rel="noopener">
+                MP3 Tagger UI — GitHub Releases
+            </a>
+        </p>
+
+        <h2>Build from source</h2>
+        <pre><code>git clone https://github.com/astrapi69/mp3-tagger-ui.git
+cd mp3-tagger-ui
+./gradlew build
+# Output JAR will be in:
+#   build/libs/mp3-tagger-ui-&lt;version&gt;.jar
+</code></pre>
+
+        <h2>Source code</h2>
+        <p>
+            Browse the repository or contribute on GitHub:
+            <br>
+            <a href="https://github.com/astrapi69/mp3-tagger-ui" target="_blank" rel="noopener">
+                github.com/astrapi69/mp3-tagger-ui
+            </a>
+        </p>
+
+        <p><a href="/tools/">← Back to tools overview</a></p>
+    </section>
+
+    <footer class="container">
+        <p>© <span id="year"></span> Asterios Raptis. All rights reserved.</p>
+        <p class="meta">
+            <a href="/sitemap.xml">Sitemap</a> ·
+            <a href="/sdkman-series/">SDKMAN Series</a>
+        </p>
+        <p class="meta">
+            Founder of
+            <a href="https://burgerfreundlichepartei.github.io/website/" target="_blank" rel="noopener">
+                BFREI — Citizen-Friendly Political Party and Reform Initiative
+            </a>
+        </p>
+    </footer>
+
+</main>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
