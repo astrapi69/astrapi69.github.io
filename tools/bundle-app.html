@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bundle App UI — Tools by Asterios Raptis</title>
+
+    <!-- Core CSS -->
+    <link rel="preload" href="/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/main.css"></noscript>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/i/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/i/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/i/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/i/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/i/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/i/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/i/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/i/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/i/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/i/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/i/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/i/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/i/favicon-16x16.png">
+    <link rel="manifest" href="/i/manifest.json">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Bundle App UI is a cross-platform tool for creating structured bundle archives from files and metadata. Source-only, no releases available yet.">
+    <link rel="canonical" href="https://astrapi69.github.io/tools/bundle-app.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bundle App UI — Tools by Asterios Raptis">
+    <meta property="og:description"
+          content="Cross-platform tool for packaging files and metadata into structured bundles. Currently source-only.">
+    <meta property="og:url" content="https://astrapi69.github.io/tools/bundle-app.html">
+    <meta property="og:image" content="https://astrapi69.github.io/i/android-icon-192x192.png">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Bundle App UI",
+            "applicationCategory": "UtilityApplication",
+            "operatingSystem": "Windows, Linux, macOS",
+            "softwareVersion": "source-only",
+            "author": {
+                "@type": "Person",
+                "name": "Asterios Raptis",
+                "url": "https://astrapi69.github.io"
+            },
+            "downloadUrl": "https://github.com/astrapi69/bundle-app-ui",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<main>
+
+    <header class="page-header container">
+        <nav class="breadcrumbs">
+            <a href="/">Home</a> ›
+            <a href="/tools/">Tools</a> ›
+            <span>Bundle App UI</span>
+        </nav>
+        <h1>Bundle App UI</h1>
+        <p class="muted">
+            A cross-platform desktop tool for creating structured bundle archives from files
+            and metadata. Useful for packaging assets, distributing datasets, and preparing
+            configuration bundles. Currently available as source-only (no prebuilt releases).
+        </p>
+    </header>
+
+    <section class="prose container">
+        <h2>Features</h2>
+        <ul>
+            <li>Create bundle archives combining files and metadata</li>
+            <li>Tree-based UI for organizing bundle structure</li>
+            <li>Optional metadata fields for structured packaging</li>
+            <li>Cross-platform: Windows, Linux, macOS</li>
+            <li>Open-source and extensible</li>
+        </ul>
+
+        <h2>Status</h2>
+        <p>
+            No official releases yet. The application must be built from source.
+        </p>
+
+        <h2>Build from source</h2>
+        <pre><code>git clone https://github.com/astrapi69/bundle-app-ui.git
+cd bundle-app-ui
+./gradlew build
+# Output JAR will be located under:
+#   build/libs/bundle-app-ui-&lt;version&gt;.jar
+</code></pre>
+
+        <h2>Source code</h2>
+        <p>
+            Repository:
+            <br>
+            <a href="https://github.com/astrapi69/bundle-app-ui"
+               target="_blank" rel="noopener">
+                github.com/astrapi69/bundle-app-ui
+            </a>
+        </p>
+
+        <p><a href="/tools/">← Back to tools overview</a></p>
+    </section>
+
+    <footer class="container">
+        <p>© <span id="year"></span> Asterios Raptis. All rights reserved.</p>
+        <p class="meta">
+            <a href="/sitemap.xml">Sitemap</a> ·
+            <a href="/sdkman-series/">SDKMAN Series</a>
+        </p>
+        <p class="meta">
+            Founder of
+            <a href="https://burgerfreundlichepartei.github.io/website/" target="_blank" rel="noopener">
+                BFREI — Citizen-Friendly Political Party and Reform Initiative
+            </a>
+        </p>
+    </footer>
+
+</main>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
