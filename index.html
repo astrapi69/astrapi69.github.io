@@ -6,34 +6,34 @@
     <title>Asterios Raptis — Author, Data Scientist, AI Consultant</title>
 
     <!-- Core CSS -->
-    <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="/main.css">
     </noscript>
 
-    <!-- Favicons (existing paths in /i/) -->
-    <link rel="apple-touch-icon" sizes="57x57" href="i/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="i/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="i/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="i/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="i/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="i/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="i/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="i/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="i/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="i/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="i/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="i/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="i/favicon-16x16.png">
-    <link rel="manifest" href="i/manifest.json">
+
+    <!-- Favicons (paths in /i/) -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/i/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/i/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/i/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/i/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/i/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/i/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/i/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/i/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/i/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/i/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/i/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/i/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/i/favicon-16x16.png">
+    <link rel="manifest" href="/i/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="i/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/i/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Basic SEO -->
     <meta name="description"
-          content="Books, data science, and AI consulting by Asterios Raptis. Practical guides, SDKMAN series,
-                   open source libraries, and advisory for teams that ship.">
+          content="Books, AI workflows, and consulting by Asterios Raptis. SDKMAN series, open source libraries, and pragmatic engineering guides.">
     <link rel="canonical" href="https://astrapi69.github.io/">
 
     <!-- Open Graph -->
@@ -100,60 +100,7 @@
 <main>
 
     <!-- Header / Hero -->
-    <header class="container hero">
-        <picture>
-            <source type="image/webp"
-                    srcset="i/avatar-160.webp 160w, i/avatar-256.webp 256w, i/avatar-320.webp 320w, i/avatar-512.webp 512w"
-                    sizes="(max-width: 640px) 160px, 160px">
-            <img class="avatar"
-                 src="i/avatar-256.jpg"
-                 srcset="i/avatar-160.jpg 160w, i/avatar-256.jpg 256w, i/avatar-320.jpg 320w, i/avatar-512.jpg 512w"
-                 sizes="(max-width: 640px) 160px, 160px"
-                 alt="Portrait von Asterios Raptis"
-                 width="160" height="160"
-                 fetchpriority="high" decoding="async">
-        </picture>
-        <div class="header-content">
-            <h1>Hello, I am Asterios Raptis</h1>
-            <p class="subtitle">
-                Author • Data Scientist • AI Consultant • Software Architect
-                <br>
-                Founder of <a href="https://burgerfreundlichepartei.github.io/website/" target="_blank" rel="noopener">
-                BFREI — Citizen-Friendly Reform Movement and Political Party
-            </a>
-
-            </p>
-
-            <p class="intro">
-                I write books and build tools at the intersection of philosophy, data, and engineering.
-                My work spans SDK management on the JVM, pragmatic automation, and AI systems that stay useful in
-                production.
-            </p>
-            <nav class="primary-nav">
-                <a href="/sdkman-series/">SDKMAN Series</a>
-                <a href="#books">Books</a>
-                <a href="#writing">Writing</a>
-                <a href="#projects">Open Source</a>
-                <a href="#consulting">Consulting</a>
-                <a href="#contact">Contact</a>
-                <a href="/tools/">Tools</a>
-            </nav>
-            <div class="socials">
-                <a href="https://github.com/astrapi69" target="_blank" rel="noopener">
-                    <img src="i/logo_github.svg" alt="" aria-hidden="true"> GitHub
-                </a>
-                <a href="https://medium.com/@asterios-raptis" target="_blank" rel="noopener">
-                    <img src="i/logo_cr.svg" alt="" aria-hidden="true"> Medium
-                </a>
-                <a href="https://www.linkedin.com/in/asterios-raptis-46824a31/" target="_blank" rel="noopener">
-                    <img src="i/logo_facebook.svg" alt="" aria-hidden="true"> LinkedIn
-                </a>
-                <a href="https://twitter.com/asteriosraptis" target="_blank" rel="noopener">
-                    <img src="i/logo_twitter.svg" alt="" aria-hidden="true"> X
-                </a>
-            </div>
-        </div>
-    </header>
+    <header-component></header-component>
 
     <!-- Featured: SDKMAN Series -->
     <section class="container highlight" id="series">
@@ -166,29 +113,36 @@
     </section>
 
     <!-- Books -->
-    <section class="container" id="books">
+    <section id="books" class="prose container">
         <h2>Books</h2>
-        <ul class="cards">
-            <li class="card">
-                <h3>Eternity, Consciousness & Simulation</h3>
-                <p>Philosophical journey through mind, time, and the simulated universe.</p>
-                <p><a href="https://www.amazon.de/-/en/Asterios-Raptis-ebook/dp/B0DXCFVQM2" target="_blank"
-                      rel="noopener">Amazon</a></p>
-            </li>
-            <li class="card">
-                <h3>The Currency of the Mind</h3>
-                <p>Attention, time, and trust as foundations of wealth in modern life.</p>
-                <p><a href="https://www.amazon.com/Currency-Mind-Attention-Trust-Wealth-ebook/dp/B0FCSLHW47"
-                      target="_blank" rel="noopener">Amazon</a></p>
-            </li>
-            <li class="card">
-                <h3>AI for Everyone</h3>
-                <p>Practical prompt design without coding. From idea to working outcomes.</p>
+        <p class="muted">
+            Selected philosophical, technical and personal works.
+            <a href="/books/">View all books →</a>
+        </p>
+
+        <div class="cards-grid">
+
+            <!-- Featured Book #1 -->
+            <article class="card">
+                <h3><a href="/books/eternity-consciousness-simulation.html">Eternity, Consciousness & Simulation</a></h3>
                 <p>
-                    <a href="https://www.amazon.com/Everyone-artificial-intelligence-enthusiasts-developers-ebook/dp/B0DWND11Y8"
-                       target="_blank" rel="noopener">Amazon</a></p>
-            </li>
-        </ul>
+                    A philosophical journey into mind, time, and the possibility that reality behaves like an information system.
+                </p>
+                <p><a class="btn" href="/books/eternity-consciousness-simulation.html">View details</a></p>
+            </article>
+
+            <!-- Featured Book #2 -->
+            <article class="card">
+                <h3><a href="/books/mit-den-augen-eines-vaters.html">Mit den Augen eines Vaters</a></h3>
+                <p>
+                    A raw and honest story about fatherhood and disability —
+                    <strong>written in German</strong>.
+                </p>
+                <p><a class="btn" href="/books/mit-den-augen-eines-vaters.html">View details</a></p>
+            </article>
+
+        </div>
+
     </section>
 
     <!-- Writing -->
@@ -256,37 +210,29 @@
             <li>Build and release automation with Pandoc, GitHub Actions, and testing</li>
             <li>Data pipelines and applied AI with measurable outcomes</li>
         </ul>
-        <p><a class="btn" href="https://www.linkedin.com/in/asterios-raptis-46824a31/" target="_blank" rel="noopener">Work
-            with me</a></p>
+        <p><a class="btn" href="https://www.linkedin.com/in/asterios-raptis-46824a31/" target="_blank" rel="noopener">
+            Work with me
+        </a></p>
     </section>
 
     <!-- Contact -->
     <section class="container" id="contact">
         <h2>Contact</h2>
         <p>
-            Best way to reach me is via <a href="https://www.linkedin.com/in/asterios-raptis-46824a31/" target="_blank"
-                                           rel="noopener">LinkedIn</a>.
-            You can also follow my work on <a href="https://medium.com/@asterios-raptis" target="_blank" rel="noopener">Medium</a>
-            and <a href="https://github.com/astrapi69" target="_blank" rel="noopener">GitHub</a>.
+            Best way to reach me is via
+            <a href="https://www.linkedin.com/in/asterios-raptis-46824a31/" target="_blank" rel="noopener">LinkedIn</a>.
+            You can also follow my work on
+            <a href="https://medium.com/@asterios-raptis" target="_blank" rel="noopener">Medium</a>
+            and
+            <a href="https://github.com/astrapi69" target="_blank" rel="noopener">GitHub</a>.
         </p>
     </section>
 
-    <footer class="container">
-        <p>© <span id="year"></span> Asterios Raptis. All rights reserved.</p>
-        <p><a href="/sitemap.xml">Sitemap</a> · <a href="/sdkman-series/">SDKMAN Series</a></p>
-        <p>
-            Founder of <a href="https://burgerfreundlichepartei.github.io/website/" target="_blank" rel="noopener">
-            BFREI — Citizen-Friendly Political Party and Reform Initiative
-        </a>
-        </p>
-    </footer>
+    <footer-component></footer-component>
 
 </main>
 
-<!-- Minimal JS for year -->
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
+<script src="web-component/js/header_component.js" defer></script>
+<script src="web-component/js/footer_component.js" defer></script>
 </body>
 </html>
